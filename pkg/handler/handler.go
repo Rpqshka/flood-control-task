@@ -17,6 +17,7 @@ func (h *Handler) InitRoutes() *gin.Engine {
 	router := gin.New()
 
 	router.POST("/check", h.check)
+	router.POST("/set-param", h.setParam)
 
 	return router
 }

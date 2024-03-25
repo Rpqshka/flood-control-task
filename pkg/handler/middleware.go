@@ -6,10 +6,10 @@ import (
 
 func checkParam(n, k string) (int64, int64, error) {
 	if n == "" {
-		n = "0"
+		n = "1"
 	}
 	if k == "" {
-		k = "0"
+		k = "5"
 	}
 
 	nInt, err := strconv.ParseInt(n, 10, 64)
@@ -21,6 +21,5 @@ func checkParam(n, k string) (int64, int64, error) {
 	if err != nil {
 		return 0, 0, err
 	}
-
 	return nInt, kInt, nil
 }
